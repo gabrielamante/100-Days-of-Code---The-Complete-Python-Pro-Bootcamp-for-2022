@@ -1,0 +1,12 @@
+STEPS: PONG GAME
+
+✔ 1. Create the ecrã @done (11/10/2022 13:10:58)
+    ✔ scoreboard @done (11/10/2022 18:12:54)
+    ☐ middle line
+✔ 2. Create paddles turtle and movement @done (11/10/2022 13:11:03)
+✔ 3. Create second paddle turtle and movement (2nd player) @done (11/10/2022 13:11:06)
+✔ 4. Create ball turtle and movement @done (11/10/2022 13:11:08)
+✔ 5. Detect collision with the wall and bounce @done (11/10/2022 13:11:12)
+✔ 6. Detect collision with the paddle @done (11/10/2022 18:12:49)
+✔ 7. Detect when paddle @done (11/10/2022 18:12:53)
+✔ 8. Keep score @done (11/10/2022 18:12:53)

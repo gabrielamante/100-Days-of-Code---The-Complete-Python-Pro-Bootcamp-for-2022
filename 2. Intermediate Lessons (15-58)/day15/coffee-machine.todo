@@ -1,0 +1,83 @@
+###Projects:
+
+* Anything with colon at the end of the line is a project title
+* You can nest projects inside each other
+* You can fold projects and sub projects
+
+###Tasks:
+
+Global tasks:
+
+    * Get emoji for coffee
+    * Print report of all coffee machine resources
+    * Check if resources are sufficient to make the coffee
+    *
+
+    * Press Cmd+Enter (Ctrl+Enter on Windows and Linux) to add a new task
+    * You can also use the Command pallette to create a new task by typing To Do:New Task
+    * If you are on a new line, it will create a new task on the current line
+    * If you are on a line with some text pressing new task shortcut will convert it to a task
+    * New tasks are nested as much as the previous task
+
+Code tasks:
+
+    ✔ 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):” @done (26/09/2022 09:25:10)
+        ✔ a. Check the users input to decide what to do next. @done (26/09/2022 09:25:04)
+        ✔ b. The prompt should show every time action has completed, e.g. once the drink is dispensed. The prompt should show again to serve the next customer. @done (26/09/2022 09:25:06)
+    ✔ 2. Turn off the Coffee Machine by entering “off” to the prompt. @done (26/09/2022 09:25:07)
+        ✔ a. For maintainers of the coffee machine, they can use “off” as the secret word to turn off the machine. Your code should end execution when this happens. @done (26/09/2022 09:25:08)
+    ✔ 3. Print report. @done (26/09/2022 09:25:12)
+        ✔ a. When the user enters “report” to the prompt, a report should be generated that shows the current resource values. e.g. @done (26/09/2022 09:25:14)
+            Water: 100ml
+            Milk: 50ml
+            Coffee: 76g
+            Money: $2.5
+    ✔ 4. Check resources sufficient? @done (26/09/2022 09:25:31)
+        ✔ a. When the user chooses a drink, the program should check if there are enough resources to make that drink. @done (26/09/2022 09:25:32)
+        ✔ b. E.g. if Latte requires 200ml water but there is only 100ml left in the machine. It should not continue to make the drink but print: “Sorry there is not enough water.” @done (26/09/2022 09:25:33)
+        ✔ c. The same should happen if another resource is depleted, e.g. milk or coffee. @done (26/09/2022 09:25:33)
+    ✔ 5. Process coins. @done (26/09/2022 09:25:37)
+        ✔ a. If there are sufficient resources to make the drink selected, then the program should prompt the user to insert coins. @done (26/09/2022 09:25:37)
+        ✔ b. Remember that quarters = $0.25, dimes = $0.10  nickles = $0.05, pennies = $0.01 @done (26/09/2022 09:25:38)
+        ✔ c. Calculate the monetary value of the coins inserted. E.g. 1 quarter, 2 dimes, 1 nickel, 2 pennies = 0.25 + 0.1 x 2 + 0.05 + 0.01 x 2 = $0.52 @done (26/09/2022 09:25:39)
+    ✔ 6. Check transaction successful? @done (26/09/2022 10:57:52)
+        ✔ a. Check that the user has inserted enough money to purchase the drink they selected. @done (26/09/2022 10:57:53)
+        E.g Latte cost $2.50, but they only inserted $0.52 then after counting the coins the program should say “Sorry that's not enough money. Money refunded.”.
+        ✔ b. But if the user has inserted enough money, then the cost of the drink gets added to the machine as the profit and this will be reflected the next time “report” is triggered. E.g. @done (26/09/2022 10:57:54)
+        Water: 100ml
+        Milk: 50ml
+        Coffee: 76g
+        Money: $2.5
+        ✔ c. If the user has inserted too much money, the machine should offer change. @done (26/09/2022 10:57:57)
+    ✔ 7. Make Coffee @done (26/09/2022 10:57:59)
+        ✔ a.  If the transaction is successful and there are enough resources to make the drink the @done (26/09/2022 10:58:00)
+        user selected, then the ingredients to make the drink should be deducted from the
+        coffee machine resources.
+
+        E.g. report before purchasing latte:
+        Water: 300ml
+        Milk: 200ml
+        Coffee: 100g
+        Money: $0
+
+        Report after purchasing latte:
+        Water: 100ml
+        Milk: 50ml
+        Coffee: 76g
+        Money: $2.5
+        
+        ✔ b. Once all resources have been deducted, tell the user “Here is your latte. Enjoy!”. If @done (07/10/2022 12:20:10)
+        latte was their choice of drink.
+
+More Actions:
+    * Complete a task by pressing Alt+d @done
+    * Re-open a completed task by pressing Alt+d
+    * Cancel a task by pressing Alt+c @cancelled
+    * Complete a cancelled task by pressing Alt+d
+    * You can also use the Command pallette to complete or cancel a task by typing 
+      To Do:Complete Task or To Do:Cancel Task 
+
+Tagging:
+    * You can add tags using @ sign, like this @tag
+    * You can use following pre-existing tags to mark tasks @critical @high @low @today 
+    * Auto intellisense is provided to help you in finding tags
